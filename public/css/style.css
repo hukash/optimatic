@@ -170,7 +170,6 @@ a:hover { color: #036; }
  */
 
 header {
-    position: relative;
     width: 100%;
 }
 
@@ -217,10 +216,11 @@ article {
 }
 
 article #optimatic-logo {
+    width: 248px;
+    margin: auto;
     padding-top:15px;
     height: 80px;
     border-top: 1px solid #ddd;
-    position: absolute;
 }
 
 footer {
