@@ -151,6 +151,7 @@ button {  width: auto; overflow: visible; }
 body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
   color: #444;
+  background-color: #065;
   /* Set your base font here, to apply evenly */
   /* font-family: Georgia, serif;  */
 }
@@ -168,11 +169,69 @@ a:hover { color: #036; }
  * Author: Lukas Sobik 
  */
 
-
-.topbar {
-
+header {
+    position: relative;
+    width: 100%;
 }
 
+header #topbar {
+    position: relative;
+    height: 40px;
+    background-image: url("../img/topbar.png");
+    background-repeat: repeat-x;
+}
+
+header #topbar #gifa-logo {
+    float: right;
+    margin-right: 40px;
+}
+
+header #logo-navbar {
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #999;
+}
+
+header #logo-navbar #cis-logo {
+    float: left;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header #nav ul li {
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    list-style-type: none;
+    height: 20px;
+}
+
+article {
+    height: 250px;
+    position: relative;
+    background-image: url("../img/background.png");
+    background-repeat: repeat;
+}
+
+article #optimatic-logo {
+    padding-top:15px;
+    height: 80px;
+    border-top: 1px solid #ddd;
+    position: absolute;
+}
+
+footer {
+    border-top: 3px solid #f39207;
+    height: 45px;
+    background-color: #065;
+}
+
+footer #footer-nav {
+
+}
 
 /**
  * Non-semantic helper classes: please define your styles before this section.
