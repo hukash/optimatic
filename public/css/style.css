@@ -150,7 +150,8 @@ button {  width: auto; overflow: visible; }
 
 body, select, input, textarea {
   /* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
-  color: #444;
+  /* #555 looks better on grey ;-) */
+  color: #555;
   background-color: #065;
   /* Set your base font here, to apply evenly */
   /* font-family: Georgia, serif;  */
@@ -209,7 +210,7 @@ header #nav ul li {
 }
 
 article {
-    height: 250px;
+    /* height: 250px; */
     position: relative;
     background-image: url("../img/background.png");
     background-repeat: repeat;
@@ -223,14 +224,70 @@ article #optimatic-logo {
     border-top: 1px solid #ddd;
 }
 
+.form {
+    width: 40em;
+    position: relative;
+    margin: auto;
+    padding-bottom: 50px;
+    font-size: 14px;
+}
+
+#main-form {
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        border-radius:10px;
+        /*IE DOES NOT SUPPORT BORDER RADIUS*/
+        -moz-box-shadow:0px 0px 20px #000000;
+        -webkit-box-shadow:0px 0px 20px #000000;
+        box-shadow:0px 0px 20px #000000;
+        /*IE DOES NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
+        background: -moz-linear-gradient(top, #ededed, transparent);
+        background: -webkit-gradient(linear, center top, center bottom, from(#ededed), to(transparent));
+        background: -o-linear-gradient(top, #ededed, transparent);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='transparent');
+        /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+        /*Element must have a height (not auto)*/
+        /*All filters must be placed together*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='transparent')";
+        /*Element must have a height (not auto)*/
+        /*All filters must be placed together*/
+        background: linear-gradient(top, #ededed, transparent);
+        /*--IE9 DOES NOT SUPPORT GRADIENT BACKGROUNDS--*/
+ 
+}
+.form-elements {
+    height: 3em;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #888;
+}
+#last-form-element {
+    border-bottom: 0;
+    margin-bottom: 20px;
+}
+.form-label {
+    /* width: 5em; */
+    float: left;
+    font-weight: bold;
+}
+input {
+    background-color: #fff;
+    float: right;
+    width: 24em;
+}
 footer {
     border-top: 3px solid #f39207;
     height: 45px;
     background-color: #065;
 }
-
+#ok-button {
+    float: right;
+}
 footer #footer-nav {
-
+    color: #eee;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /**
